@@ -1,0 +1,82 @@
+.weather{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right, #dc2424, #4a569d);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+        -webkit-text-fill-color: transparent;
+        text-align:center;
+        font-size:50px;
+        padding-top:30px;
+        -webkit-text-stroke: 1px #fff;
+    }
+    h2{
+        -webkit-text-stroke: 1px #fff;
+        -webkit-text-fill-color: transparent;
+        font-size: 30px;
+    }
+    &-container{
+        width:350px;
+        height:350px;
+        border: 3px solid rgba(255,255,255,.5);
+        border-radius: 5px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        h1{
+            color:#fff;
+        }
+    }
+    &-search{
+        width:40%;
+        height: 200px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .ant-input-search{
+            width: 400px;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid rgba(255,255,255,.5);
+            color:#fff;
+            &:hover{
+                border-bottom: 1px solid rgba(255,255,255,1);
+            }
+            &:focus{
+                border:none;
+                outline:none;
+                border-bottom: 1px solid rgba(255,255,255,1);
+                box-shadow: unset;
+            }
+        }
+        .ant-input-affix-wrapper-focused{
+            border:none;
+            outline:none;
+            &:hover{
+                border:none;
+                border-bottom: 1px solid rgba(255,255,255,1);
+                border-color: none;
+                outline:none;
+            }
+        }
+        .ant-input{
+            width: 350px;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid rgba(255,255,255,.5);
+           
+        }
+        .ant-input-search-icon{
+            color: #fff!important;
+            &:hover{
+                color: #dd2476!important;
+            }
+        }
+    }
+}
+.anticon-cloud{
+    color:rgba(255,255,255,.8)!important;
+}

@@ -1,0 +1,18 @@
+.loading-contaienr{
+    position:fixed;
+    width: 100%;
+    height:100vh;
+    background: linear-gradient(to right, #03001e, #7303c0, #ec38bc, #fdeff9);
+    opacity: .7;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top:0;
+    left:0;
+    h1{
+        font-size:30px;
+        -webkit-text-stroke: 2px #3494e6;
+        -webkit-text-fill-color: transparent;
+    }
+}
